@@ -1,0 +1,127 @@
+@font-face {
+  font-family: HigherJump;
+  src: url(Higher\ Jump.ttf);
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width:100svw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container{
+  width: 100svw;
+  height:100vh;
+  position: absolute;
+  overflow-x: hidden;
+  background-color: #eeeeed;
+}
+
+.screenshot{
+  top:0;
+  left:0;
+  position: absolute;
+  width:100%;
+  opacity: 0.2;
+}
+
+.first-page{
+  width:100dvw;
+  height:100dvh;
+  font-family: HigherJump, Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom,#eeeeed 90%, #e0e0e0 100%);
+  position: relative;
+}
+
+.first-page p{
+  font-size: min(5vw, 15vh);
+  color: #333;
+}
+
+.title-1{
+  translate: 0 11%;
+}
+
+.title-2{
+  translate: 0 -11%;
+
+}
+
+.p-1{
+  position: relative;
+  width: 100vw;
+  /* min-height: 200vh; */
+  aspect-ratio: 8/15;
+  height: auto;
+}
+
+.p-1 svg{
+  width:100vw;
+}
+
+.p-1-mountains{
+  position: absolute;
+  top:0;
+  /* transform: translate(-1%, 0); */
+  transform: translate(-1%, 0);
+}
+
+.p-1-bg-trees{
+  position: absolute;
+  top:46.5vw;
+  /* transform: translate(-2.6%, 0); */
+  transform: translate(-2.6%, 0);
+}
+
+.p-1 .p-1-back-tree{
+  position: absolute;
+  top:38vw;
+  left:50%;
+  width:13vw;
+  /* transform: translate(-50%, 0); */
+  transform: translate(-50%, -4vw);
+}
+
+.p-1 .p-1-house-trees{
+  position: absolute;
+  width: 86vw;
+  left:50%;
+  top:38.5vw;
+  /* transform: translate(-48%, 0); */
+  transform: translate(-48%, -10vw);
+  mix-blend-mode: darken;
+}
+
+.p-1 .p-1-front-trees{
+  position: absolute;
+  width: 83vw;
+  left:50%;
+  top:16.5vw;
+  /* transform: translate(-48.9%, 0); */
+  transform: translate(-48.9%, -18vw);
+}
+
+.p-1 .p-1-lake{
+  position: absolute;
+  width: 79vw;
+  left:50%;
+  top:91vw;
+  /* transform: translate(-50.1%, 0); */
+  transform: translate(-50.1%, -20vw);
+}
